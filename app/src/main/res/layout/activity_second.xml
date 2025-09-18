@@ -8,6 +8,10 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
     <TextView
         android:id="@+id/titleTextView"
@@ -92,22 +96,13 @@
         android:id="@+id/btnStart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Дата начала"
+        android:layout_marginTop="612dp"
         android:layout_marginRight="10dp"
+        android:text="Дата начала"
         app:layout_constraintEnd_toStartOf="@+id/btnEnd"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Button
-        android:id="@+id/btnEnd"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Дата окончания"
-        app:layout_constraintStart_toEndOf="@+id/btnStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="@+id/btnStart"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvStart"
@@ -135,11 +130,23 @@
         android:id="@+id/btnCalc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
         android:text="Посчитать понедельники"
-        app:layout_constraintTop_toBottomOf="@+id/tvStart"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStart" />
+
+    <Button
+        android:id="@+id/btnEnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="484dp"
+        android:text="Дата окончания"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/btnStart"
+        app:layout_constraintTop_toTopOf="@+id/btnStart" />
 
     <TextView
         android:id="@+id/tvResult"
@@ -153,6 +160,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-
+</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

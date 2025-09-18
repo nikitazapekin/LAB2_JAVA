@@ -46,7 +46,7 @@ public class SecondActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Закрываем текущую активность и возвращаемся к предыдущей
+                finish();
             }
         });
 
@@ -65,17 +65,17 @@ public class SecondActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         calendar.set(year, month, day);
 
-        // Расчет для 10 дней
+
         calendar.set(year, month, day);
         calendar.add(Calendar.DAY_OF_MONTH, 10);
         Date date10Days = calendar.getTime();
 
-        // Расчет для 100 дней
+
         calendar.set(year, month, day);
         calendar.add(Calendar.DAY_OF_MONTH, 100);
         Date date100Days = calendar.getTime();
 
-        // Расчет для 1000 дней
+
         calendar.set(year, month, day);
         calendar.add(Calendar.DAY_OF_MONTH, 1000);
         Date date1000Days = calendar.getTime();

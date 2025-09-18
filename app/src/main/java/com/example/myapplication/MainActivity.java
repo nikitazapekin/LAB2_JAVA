@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         goToSecondButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Создаем Intent для перехода к SecondActivity
+             
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
             }

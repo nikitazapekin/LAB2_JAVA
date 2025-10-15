@@ -50,7 +50,7 @@ public class ThirdActivity extends AppCompatActivity {
             String formattedDateTime = formatter.format(calendar.getTime());
 
 
-            resultTextView.setText("Через 1,000,000 секунд: " + formattedDateTime);
+            resultTextView.setText("Через 1,0,000,000 секунд: " + formattedDateTime);
         });
     }
 }
